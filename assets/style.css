@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+  }
+
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  header {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 240%;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+
+  h1::after {
+  content: 'UDDIN MAHMOOD';
+  color: wheat;
+  
+  }
+
+  .sub {
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+    display: flex;
+    justify-content: right;
+    background-image: url(images/black-yellow.webp);
+  }
+  
+.front {
+  z-index: 1;
+  background-color: wheat;
+  color: black;
+  padding: 20px;
+}
+
+  nav {
+    display: flex;
+    background-color: wheat;
+  }
+  
+  nav a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+
+
+  main {
+    max-width: 100%;
+    margin: 1%;
+    flex-grow: 1;
+    background-color: black;
+  }
+  
+  article {
+    border-bottom: 1px solid #13293d;
+  }
+  
+  article p {
+    margin: 2% 0;
+    font-size: 110%;
+  }
+  
+  article ul {
+    margin-left: 5%;
+    font-size: 110%;
+    list-style: circle;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    line-height: 1.3;
+    background-color: wheat;
+  } 
+
+  
+  h2 {
+    font-size: 200%;
+    color: wheat;
+    text-align: center;
+  }
+
+  .front::before {
+    content: '\2B50 \2B50 \2B50';
+    margin-right: 5px;
+  }
+  
+  .row {
+      display: flex;
+      color: wheat;
+      margin: 2% 2% 5% 2%;
+      min-height: 150px;
+    }
+    
+  .column-left{
+      flex: 25%;
+      margin-top: 20px;
+      width: 25%;
+      border-right: 5px solid wheat;
+      flex-shrink: 1;
+      margin-right: 2%;
+      
+    }
+  .column-right{
+      flex: 75%;
+      margin-top: 20px;
+      width: 75%;
+      margin-left: 50px;
+      
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100px;
+      color: wheat;
+    }
+
+    span[data-descr] {
+      position: relative;
+      text-decoration: underline;
+      color: white;
+      cursor: grab;
+    }
+
+    span[data-descr]:hover::after {
+      content: attr(data-descr);
+      position: absolute;
+      left: 0px;
+      bottom: 24px;
+      min-width: 200px;
+      border: 1px magenta solid;
+      background-color: wheat;
+      padding: 12px;
+      color: black;
+      font-size: 80%;
+      z-index: 1;
+    }
+    
+  
+  .products {
+    width: 100%;
+  }
+  
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 20px;
+    border-color: wheat;
+    background-image: url(images/logo.webp);
+    background-size: contain;
+    min-height: 100px;
+    box-shadow: 10px 10px 5px wheat;
+  }
+  
+  
+.first-card {
+  border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 20px;
+    border-color: wheat;
+    background-image: url(images/logo.webp);
+    background-size: contain;
+    min-height: 300px;
+    box-shadow: 10px 10px 5px wheat;
+  }
+
+  .card header {
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+    background-color: wheat;
+    text-align: center;
+  }
+  
+  .card p {
+    text-align: center;
+  }
+  
+
+  h3 {
+    color: black;
+    text-align: center;
+  }
+
+  h3:hover {
+    color: magenta;
+  }
+
+  .foot {
+    padding: 10px;
+    text-align: right;
+    font-size: x-large;
+    display: flex;
+    justify-content: right;
+    background-image: url(images/black-yellow.webp);
+  }
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: wheat;
+    color: black;
+    margin-top: auto;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    main,
+    header,
+    body
+    * { flex-direction: column;}
+    h2 {flex-shrink: 1;}
+    nav {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    .card {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 515px) {
+    .column-left { border-right: 0px; }
+  }
