@@ -279,4 +279,7 @@
 
   @media screen and (max-width: 515px) {
     .column-left { border-right: 0px; }
+    .first-card {
+      min-height: 100px;
+    }
   }
