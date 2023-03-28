@@ -192,18 +192,24 @@
   
   
 .first-card {
-  border-style: solid;
-    border-width: 1px;
-    border-radius: 50px;
-    padding: 10px;
+    border-style: solid;
     margin: 20px;
     border-color: wheat;
-    background-image: url(images/logo.webp);
+    background-image: url(images/parkquest.png);
     background-size: contain;
-    min-height: 300px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 250px;
     box-shadow: 10px 10px 5px wheat;
   }
 
+.first-card-header {
+    border-radius: 50px 50px 0px 0px;
+    color: wheat;
+    padding: 20px;
+    text-align: center;
+    justify-content: end;
+}
   .card header {
     border-radius: 50px 50px 0px 0px;
     padding: 20px;
