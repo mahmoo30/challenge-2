@@ -250,6 +250,11 @@
     margin-top: auto;
   }
 
+  @media screen and (max-width: 1200px) {
+    .first-card {
+      min-height: 200px;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     main,
@@ -266,7 +271,11 @@
     .card {
       width: 100%;
     }
+
+    .first-card {
+    min-height: 150px;
   }
+}
 
   @media screen and (max-width: 515px) {
     .column-left { border-right: 0px; }
