@@ -250,7 +250,7 @@
     margin-top: auto;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1100px) {
     .first-card {
       min-height: 200px;
     }
