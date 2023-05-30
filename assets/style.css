@@ -203,6 +203,18 @@
     box-shadow: 10px 10px 5px wheat;
   }
 
+.second-card {
+    border-style: solid;
+    margin: 20px;
+    border-color: wheat;
+    background-image: url(images/battlehawks.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 270px;
+    box-shadow: 10px 10px 5px wheat;
+  }
+
 .first-card-header {
     border-radius: 50px 50px 0px 0px;
     color: wheat;
@@ -254,6 +266,9 @@
     .first-card {
       min-height: 200px;
     }
+    .second-card {
+      min-height: 200px;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -275,11 +290,18 @@
     .first-card {
     min-height: 150px;
   }
+
+  .second-card {
+    min-height: 165px;
+  }
 }
 
   @media screen and (max-width: 515px) {
     .column-left { border-right: 0px; }
     .first-card {
-      min-height: 100px;
+      min-height: 105px;
+    }
+    .second-card {
+      min-height: 115px;
     }
   }
